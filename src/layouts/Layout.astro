@@ -3,6 +3,8 @@ import Taglet from '../components/Taglet.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { COMPANY_NAME } from '../lib/config';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -15,12 +17,12 @@ import { COMPANY_NAME } from '../lib/config';
     <meta name="keywords" content="Mobile Car Repair, Car Body Repair..." />
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo/logo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/apple-touch-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href={`${base}assets/images/logo/logo.png`}>
+    <link rel="apple-touch-icon" sizes="180x180" href={`${base}assets/images/logo/apple-touch-logo.png`}>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-    <link rel="stylesheet" href="/assets/css/normalize.css" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href={`${base}assets/css/normalize.css`} />
+    <link rel="stylesheet" href={`${base}assets/css/styles.css`} />
   </head>
   <body>
     <!-- Sidebar (Menu) for mobile -->
@@ -58,8 +60,8 @@ import { COMPANY_NAME } from '../lib/config';
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="/assets/js/main.js"></script>
-    <script type="module" src="/assets/js/active.js"></script>
+    <script type="module" src={`${base}assets/js/main.js`}></script>
+    <script type="module" src={`${base}assets/js/active.js`}></script>
 
   </body>
 </html>
