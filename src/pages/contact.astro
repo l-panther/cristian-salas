@@ -29,7 +29,7 @@ const formattedPhone =
       <!-- Email -->
       <ion-item 
         button 
-        href={`mailto:${COMPANY_EMAIL}`} 
+        href="#"
         aria-label={`Send email to ${COMPANY_EMAIL}`}
       >
         <ion-label>
@@ -39,13 +39,7 @@ const formattedPhone =
       </ion-item>
 
       <!-- Location -->
-      <ion-item 
-        button 
-        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(COMPANY_LOCATION)}`} 
-        target="_blank"
-        rel="noopener"
-        aria-label={`View location: ${COMPANY_LOCATION}`}
-      >
+      <ion-item>
         <ion-label>
           <span id="location">{COMPANY_LOCATION}</span>
         </ion-label>
