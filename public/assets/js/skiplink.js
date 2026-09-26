@@ -1,0 +1,1 @@
+$(document).ready(function(){window.onscroll=function(){let o=$("#toTop");window.scrollY<=50?o.fadeOut():o.fadeIn()}});

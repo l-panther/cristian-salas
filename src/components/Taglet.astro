@@ -1,0 +1,11 @@
+---
+import { COMPANY_NAME } from '../lib/config';
+const [firstname, lastname] = COMPANY_NAME.split(' ');
+---
+
+<!-- Taglet -->
+<div id="taglet" class="container ion-hide-lg-down">
+  <p class="brand-logo">
+    {firstname} <span>{lastname}</span>
+  </p>
+</div>

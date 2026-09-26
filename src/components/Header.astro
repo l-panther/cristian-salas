@@ -1,0 +1,28 @@
+---
+import { COMPANY_NAME } from '../lib/config';
+const [firstname, lastname] = COMPANY_NAME.split(' ');
+---
+
+<ion-header id="header" class="ion-no-border">
+  <ion-toolbar id="navbar" class="container">
+    <!-- Logo -->
+    <ion-title slot="start" class="ion-hide-lg-up">
+      <p class="brand-logo right">
+        {firstname} <span>{lastname}</span>
+      </p>
+    </ion-title>
+
+    <!-- Burger Menu Button (Visible on mobile) -->
+    <ion-buttons slot="end" class="burger-menu-mobile ion-hide-lg-up">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Desktop Navbar Links -->
+     <div slot="end" class="ion-hide-lg-down">
+      <a href="/" class="nav-link home-btn">Home</a>
+      <a href="/archive" class="nav-link archive-btn">My archive</a>
+      <a href="/about" class="nav-link about-btn">About me</a>
+      <a href="/contact" class="nav-link contact-btn">Contact me</a>
+    </div>
+  </ion-toolbar>
+</ion-header>

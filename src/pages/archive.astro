@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import VideoGallery from '../components/VideoGallery.astro';  // Import the video gallery component
+---
+
+<Layout>
+	<!-- Projects -->
+	<article id="gallery">
+
+		<h1>My Archive</h1>
+		<p class="w3-center">Welcome to my video portfolio. Here, you'll find a collection of projects that showcase my skills in video production, from conceptualization to editing. Whether it’s storytelling, promotional content, or creative campaigns, each video is crafted with attention to detail and a passion for bringing ideas to life. Take a look and see how I can transform your vision into dynamic, engaging video content</p>
+
+		<div id="mediaList">
+			<VideoGallery/>
+		</div>
+	</article> <!-- End projects -->
+</Layout>

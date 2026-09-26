@@ -1,0 +1,65 @@
+---
+import Taglet from '../components/Taglet.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { COMPANY_NAME } from '../lib/config';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{COMPANY_NAME}</title>
+    <meta name="description" content="Professional mobile car body repair services..." />
+    <meta name="keywords" content="Mobile Car Repair, Car Body Repair..." />
+    <meta name="author" content="">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/apple-touch-logo.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar (Menu) for mobile -->
+    <ion-menu content-id="main-content" type="overlay" side="end" id="sidebar">
+      <ion-content>
+        <ion-list lines="none">
+          <ion-item class="home-btn">
+            <a href="/" class="nav-link">Home</a>
+          </ion-item>
+          <ion-item class="archive-btn">
+            <a href="/archive"class="nav-link">Archive</a>
+          </ion-item>
+          <ion-item class="about-btn">
+            <a href="/about" class="nav-link">About</a>
+          </ion-item>
+          <ion-item class="contact-btn">
+            <a href="/contact" class="nav-link">Contact</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <!-- Main content -->
+    <ion-content class="ion-page" id="main-content">
+      <Taglet />
+      <Header />
+      <main class="container">
+        <slot />
+      </main>
+      <Footer />
+    </ion-content>
+
+    <!-- Scripts for sidebar and validation -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/active.js"></script>
+
+  </body>
+</html>

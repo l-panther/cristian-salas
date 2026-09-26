@@ -1,0 +1,25 @@
+---
+import { COMPANY_NAME } from '../lib/config';
+const currentYear = new Date().getFullYear();
+---
+
+<!-- Footer -->
+<footer>
+  <div class="ion-text-center">
+    <!-- Facebook link with aria-label -->
+    <a href="/" aria-label="Visit our Facebook page">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <!-- Instagram link with aria-label -->
+    <a href="/" style="margin-left: 20px;" aria-label="Visit our Instagram profile">
+      <ion-icon name="logo-instagram" size="medium"></ion-icon>
+    </a>
+
+    <!-- Copyright and created by information with clearer accessibility -->
+    <p>
+      &copy; <span aria-live="polite">{currentYear}</span> 
+      <span id="companyName">{COMPANY_NAME}</span> | 
+      By <span class="theme-color">Leroy Russell</span>
+    </p>
+  </div>
+</footer>

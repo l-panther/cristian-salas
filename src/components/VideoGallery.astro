@@ -1,0 +1,29 @@
+---
+import website from '../lib/Gallery.js';  // Import Website class
+const media = website.getGallery(); // Get media data
+---
+
+<div class="video-gallery">
+  <ion-grid>
+    <ion-row>
+      {media.map((item) => (
+        <ion-col size="12" size-md="6" size-lg="4" key={item.id} class="media-container">
+          <ion-card>
+            <video
+              controls
+              poster="/assets/images/archive/placeholder.jpg"
+            >
+                <!--<source src={`/media/${item.fileName}.mp4`} type="video/mp4" /> -->
+              Your browser does not support the video tag.
+            </video>
+
+            <ion-card-content>
+              <h3>{item.videoTitle}</h3>
+              <p>{item.videoArtist}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      ))}
+    </ion-row>
+  </ion-grid>
+</div>
