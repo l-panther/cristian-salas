@@ -1,39 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
-  let page = window.location.pathname; // Get only the path part (e.g., "/about", "/archive", etc.)
-  
-  // Set active class for specific buttons
-  setActive("archive", ".archive-btn");
-  setActive("about", ".about-btn");
-  setActive("contact", ".contact-btn");
-  setActive("/", ".home-btn");  // Handle homepage case
+  const page = window.location.pathname;
 
-  //console.log("this page is" +  page);
-  
-  function setActive(path, elemClass) {
-    const menuLinks = document.querySelectorAll(elemClass); // Get the specific element
-    const home = document.querySelectorAll(".home-btn")
-    // Check if the current page matches the name (or if it's the homepage for "")
-    if (page == "/" || page == "") {
-        
-      // console.log("this page is either "/" or "");
-        
-      home.forEach(function(element) {
-        element.classList.add("active");
-      });// Add the "active" class
-    } else if (page.includes(path)) {
-      
-        // Add "active" class if the current page matches the path
-        menuLinks.forEach(function(menuLink) {
-           
-             if (page.includes(path)) {
-              // If the current path matches (e.g., "/about" matches with .about-btn)
-              menuLink.classList.add("active");
-              home.forEach(function(element) {
-                element.classList.remove("active");
-              });// Add the "active" class
-                
-            }
-        });
-    }}
+  const homeBtns = document.querySelectorAll('.home-btn');
+  const archiveBtns = document.querySelectorAll('.archive-btn');
+  const aboutBtns = document.querySelectorAll('.about-btn');
+  const contactBtns = document.querySelectorAll('.contact-btn');
+
+  // Remove active from everything first
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Check specific pages
+  if (page.includes('/archive')) {
+    archiveBtns.forEach(btn => btn.classList.add('active'));
+
+  } else if (page.includes('/about')) {
+    aboutBtns.forEach(btn => btn.classList.add('active'));
+
+  } else if (page.includes('/contact')) {
+    contactBtns.forEach(btn => btn.classList.add('active'));
+
+  } else {
+    // If we're not on archive/about/contact,
+    // we're on the homepage
+    homeBtns.forEach(btn => btn.classList.add('active'));
+  }
 });
