@@ -1,5 +1,7 @@
 ---
 import { COMPANY_NAME } from '../lib/config';
+
+const base = import.meta.env.BASE_URL;
 const [firstname, lastname] = COMPANY_NAME.split(' ');
 ---
 
@@ -18,11 +20,11 @@ const [firstname, lastname] = COMPANY_NAME.split(' ');
     </ion-buttons>
 
     <!-- Desktop Navbar Links -->
-     <div slot="end" class="ion-hide-lg-down">
-      <a href="/" class="nav-link home-btn">Home</a>
-      <a href="/archive" class="nav-link archive-btn">My archive</a>
-      <a href="/about" class="nav-link about-btn">About me</a>
-      <a href="/contact" class="nav-link contact-btn">Contact me</a>
+    <div slot="end" class="ion-hide-lg-down">
+      <a href={base} class="nav-link home-btn">Home</a>
+      <a href={`${base}archive`} class="nav-link archive-btn">My archive</a>
+      <a href={`${base}about`} class="nav-link about-btn">About me</a>
+      <a href={`${base}contact`} class="nav-link contact-btn">Contact me</a>
     </div>
   </ion-toolbar>
 </ion-header>
