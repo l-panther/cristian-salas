@@ -342,12 +342,6 @@ footer p {
 --------------------------------------------------------- */
 @media screen and (max-width: 37.5rem) {
 
-  /* Main page spacing */
-  .container {
-    width: 100%;
-    padding: 2rem 1.25rem;
-  }
-
   /* Main headings */
   h1 {
     font-size: 1.65rem;
