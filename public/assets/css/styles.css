@@ -341,11 +341,15 @@ footer p {
    MOBILE
 --------------------------------------------------------- */
 @media screen and (max-width: 37.5rem) {
-
+  
+  .container {
+    padding: 2rem 1.5rem;
+  }
+  
   /* Main headings */
   h1 {
     font-size: 1.65rem;
-    padding-bottom: 0.75em;
+    padding-bottom: 0.4em;
   }
 
   /* Logo / tagline area */
@@ -360,9 +364,9 @@ footer p {
 
   /* About profile image */
   #about img {
-    width: 48%;
-    max-width: 180px;
-    margin: 1.25rem auto 2rem;
+    width: 62%;
+    max-width: 220px;
+    margin: 0.75rem auto 1.5rem;
     display: block;
   }
 
@@ -372,6 +376,7 @@ footer p {
     line-height: 1.55;
     letter-spacing: 0.09rem;
   }
+
 
   /* Cards */
   ion-card {
