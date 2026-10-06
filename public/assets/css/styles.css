@@ -345,6 +345,21 @@ footer p {
   .container {
     padding: 2rem 1rem;
   }
+
+  ion-grid {
+    --ion-grid-padding: 0;
+	--ion-grid-padding-xs: 0;
+	padding: 0;
+  }
+
+  ion-row {
+    margin: 0;
+  }
+
+  ion-col {
+    --ion-grid-column-padding: 0;
+    padding: 0;
+  }
   
   /* Main headings */
   h1 {
