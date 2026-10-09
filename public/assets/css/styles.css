@@ -213,6 +213,56 @@ ion-title {
   border-radius: 1em;
 }
 
+.gallery-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-image .preview {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-label {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.label-line {
+  width: 35px;
+  height: 3px;
+  background: #ed1c24;
+  margin-bottom: 12px;
+}
+
+.label-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+}
+
+.label-subtitle {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.label-subtitle em {
+  color: #ed1c24;
+  font-style: normal;
+}
+
 /* Third image only */
 .image-gallery > :last-child img {
   width: 100%;
@@ -343,6 +393,25 @@ footer p {
 
   #about img {
     width: 80%;
+  }
+}
+
+/* ---------------------------------------------------------
+   TABLET
+--------------------------------------------------------- */
+@media (max-width: 768px) {
+  .label-title {
+    font-size: 13px;
+  }
+
+  .label-subtitle {
+    font-size: 11px;
+  }
+
+  .label-line {
+    width: 25px;
+    height: 2px;
+    margin-bottom: 8px;
   }
 }
 
