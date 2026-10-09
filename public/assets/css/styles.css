@@ -238,6 +238,29 @@ ion-card:hover {
   overflow: hidden;
 }
 
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  pointer-events: none;
+}
+
+.play-icon ion-icon {
+  font-size: 24px;
+}
+
 /* ABOUT */
 #about img {
   width: 60%;
