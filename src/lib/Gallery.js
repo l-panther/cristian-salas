@@ -13,14 +13,14 @@ class Designer {
 
   getMedia() {
     this.media = [
-      { id: 1, videoTitle: "Title 1", videoArtist: "Artist Name 1", fileName: "video1" },
-      { id: 2, videoTitle: "Title 2", videoArtist: "Artist Name 2", fileName: "video2" },
-      { id: 3, videoTitle: "Title 3", videoArtist: "Artist Name 3", fileName: "video3" },
-      { id: 4, videoTitle: "Title 4", videoArtist: "Artist Name 4", fileName: "video4" },
-      { id: 5, videoTitle: "Title 5", videoArtist: "Artist Name 5", fileName: "video5" },
-      { id: 6, videoTitle: "Title 6", videoArtist: "Artist Name 6", fileName: "video6" },
-      { id: 7, videoTitle: "Title 7", videoArtist: "Artist Name 7", fileName: "video7" },
-      { id: 8, videoTitle: "Title 8", videoArtist: "Artist Name 8", fileName: "video8" },
+      { id: 1, videoTitle: "Project 01", videoArtist: "Video Showcase 01", fileName: "video1" },
+      { id: 2, videoTitle: "Project 02", videoArtist: "Video Showcase 02", fileName: "video2" },
+      { id: 3, videoTitle: "Project 03", videoArtist: "Video Showcase 03", fileName: "video3" },
+      { id: 4, videoTitle: "Project 04", videoArtist: "Video Showcase 04", fileName: "video4" },
+      { id: 5, videoTitle: "Project 05", videoArtist: "Video Showcase 05", fileName: "video5" },
+      { id: 6, videoTitle: "Project 06", videoArtist: "Video Showcase 06", fileName: "video6" },
+      { id: 7, videoTitle: "Project 07", videoArtist: "Video Showcase 07", fileName: "video7" },
+      { id: 8, videoTitle: "Project 08", videoArtist: "Video Showcase 08", fileName: "video8" },
     ];
     return this.media;
   }
