@@ -12,21 +12,60 @@ import Layout from '../layouts/Layout.astro';
     <p class="w3-margin-top">
         I believe the best work happens when creativity meets connection. That’s why I take the time to understand your goals, your style, and your story, crafting each project with care and intention. Every detail matters, and every step is an opportunity to create something extraordinary. Thank you for stopping by—let’s explore your ideas together and bring them to life in a way that’s as inspiring as it is authentic.
     </p>
-    <!-- Using Ionic Grid System -->
+   <!-- Using Ionic Grid System -->
     <ion-grid>
       <ion-row>
         <ion-col size="12" size-md="6">
-          <img src={`${import.meta.env.BASE_URL}assets/images/home/placeholder1.webp`} alt="Placeholder image 1" class="preview">
+          <div class="gallery-image">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/home/placeholder1.webp`}
+              alt="Placeholder image 1"
+              class="preview"
+            />
+    
+            <div class="image-label">
+              <span class="label-line"></span>
+              <span class="label-title">SAMPLE</span>
+              <span class="label-subtitle">IMAGE <em>1</em></span>
+            </div>
+          </div>
         </ion-col>
+    
         <ion-col size="12" size-md="6">
-          <img src={`${import.meta.env.BASE_URL}assets/images/home/placeholder2.webp`} alt="Placeholder image 2" class="preview">
+          <div class="gallery-image">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/home/placeholder2.webp`}
+              alt="Placeholder image 2"
+              class="preview"
+            />
+    
+            <div class="image-label">
+              <span class="label-line"></span>
+              <span class="label-title">SAMPLE</span>
+              <span class="label-subtitle">IMAGE <em>2</em></span>
+            </div>
+          </div>
         </ion-col>
       </ion-row>
+    
       <ion-row>
         <ion-col size="12">
-          <img src={`${import.meta.env.BASE_URL}assets/images/home/placeholder3.webp`} alt="Placeholder image 3" class="preview">
+          <div class="gallery-image">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/home/placeholder3.webp`}
+              alt="Placeholder image 3"
+              class="preview"
+            />
+    
+            <div class="image-label">
+              <span class="label-line"></span>
+              <span class="label-title">SAMPLE</span>
+              <span class="label-subtitle">IMAGE <em>3</em></span>
+            </div>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>
   </section>
 </Layout>
+
