@@ -11,7 +11,7 @@ const media = website.getGallery(); // Get media data
           <ion-card>
             <video
               controls
-              poster="/assets/images/archive/placeholder.jpg"
+              poster={`${import.meta.env.BASE_URL}assets/images/archive/placeholder.jpg`}
             >
                 <!--<source src={`/media/${item.fileName}.mp4`} type="video/mp4" /> -->
               Your browser does not support the video tag.
