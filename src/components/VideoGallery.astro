@@ -1,12 +1,13 @@
 ---
-import website from '../lib/Gallery.js';  // Import Website class
-const media = website.getGallery(); // Get media data
+import website from '../lib/Gallery.js';
+
+const media = website.getGallery();
 ---
 
 <div class="video-gallery">
   <ion-grid>
     <ion-row>
-      {media.map((item) , index=> (
+      {media.map((item, index) => (
         <ion-col
           size="12"
           size-md="6"
@@ -21,13 +22,15 @@ const media = website.getGallery(); // Get media data
                 alt="Video preview placeholder"
                 loading="lazy"
               />
-          
+
               <div class="placeholder-text">
                 <span class="red-line"></span>
                 <h2>EXAMPLE</h2>
                 <p>VIDEO {index + 1}</p>
               </div>
-          
+
+            </div>
+
             <ion-card-content>
               <h3>{item.videoTitle}</h3>
               <p>{item.videoArtist}</p>
@@ -38,63 +41,3 @@ const media = website.getGallery(); // Get media data
     </ion-row>
   </ion-grid>
 </div>
-
-<style>
-.video-preview {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.video-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.placeholder-text {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  z-index: 2;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-
-  pointer-events: none;
-}
-
-.red-line {
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #e50914;
-  margin-bottom: 10px;
-}
-
-.placeholder-text h2 {
-  margin: 0;
-  color: #fff;
-  font-size: clamp(12px, 1.5vw, 20px);
-  font-weight: 600;
-  letter-spacing: 4px;
-}
-
-.placeholder-text p {
-  margin: 0;
-  color: #999;
-  font-size: clamp(10px, 1vw, 14px);
-  letter-spacing: 3px;
-}
-
-/* Keep play icon centred */
-.play-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}</style>
