@@ -15,26 +15,24 @@ const media = website.getGallery(); // Get media data
           class="media-container"
         >
           <ion-card>
-  <div class="video-preview">
-    <img
-      src={`${import.meta.env.BASE_URL}assets/images/archive/placeholder.webp`}
-      alt="Video preview placeholder"
-      loading="lazy"
-    />
-
-    <div class="placeholder-text">
-      <span class="red-line"></span>
-      <h2>EXAMPLE</h2>
-      <p>VIDEO {index + 1}</p>
-    </div>
-
-
-
-  <ion-card-content>
-    <h3>{item.videoTitle}</h3>
-    <p>{item.videoArtist}</p>
-  </ion-card-content>
-</ion-card>
+            <div class="video-preview">
+              <img
+                src={`${import.meta.env.BASE_URL}assets/images/archive/placeholder.webp`}
+                alt="Video preview placeholder"
+                loading="lazy"
+              />
+          
+              <div class="placeholder-text">
+                <span class="red-line"></span>
+                <h2>EXAMPLE</h2>
+                <p>VIDEO {index + 1}</p>
+              </div>
+          
+            <ion-card-content>
+              <h3>{item.videoTitle}</h3>
+              <p>{item.videoArtist}</p>
+            </ion-card-content>
+          </ion-card>
         </ion-col>
       ))}
     </ion-row>
