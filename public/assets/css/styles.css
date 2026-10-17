@@ -264,7 +264,7 @@ ion-title {
 }
 
 /* Third image only */
-.image-gallery img:last-child {
+.large-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
