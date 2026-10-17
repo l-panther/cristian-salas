@@ -218,6 +218,8 @@ ion-title {
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
+  column-gap: 24px;
+  row-gap: 20px;
 }
 
 .gallery-image .preview {
