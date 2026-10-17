@@ -213,6 +213,10 @@ ion-title {
   border-radius: 1em;
 }
 
+#home img:last-child {
+  margin-top: 1.6rem;
+}
+
 .gallery-image {
   position: relative;
   width: 100%;
