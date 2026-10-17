@@ -101,4 +101,51 @@ const media = website.getGallery();
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+
+/* -------------------------
+   VIDEO CARD
+-------------------------- */
+.video-gallery ion-card {
+  --background: #191919;
+  background: #191919;
+  overflow: hidden;
+}
+
+/* -------------------------
+   VIDEO DETAILS
+-------------------------- */
+.video-gallery ion-card-content {
+  background: #191919;
+  padding: 16px 20px 18px;
+  border-top: 1px solid rgba(229, 9, 20, 0.2);
+}
+
+/* Small red accent */
+.video-gallery ion-card-content::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #e50914;
+  margin-bottom: 12px;
+}
+
+/* Project title */
+.video-gallery ion-card-content h3 {
+  margin: 0 0 6px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* Video description */
+.video-gallery ion-card-content p {
+  margin: 0;
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
 </style>
