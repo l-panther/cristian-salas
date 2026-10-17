@@ -228,6 +228,23 @@ ion-title {
   height: auto;
 }
 
+/* Top row only */
+#home ion-grid > ion-row:first-child > ion-col:first-child {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+#home ion-grid > ion-row:first-child > ion-col:last-child {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+/* Third image spans the full width */
+#home ion-grid > ion-row:nth-child(2) > ion-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .image-label {
   position: absolute;
   top: 70px;
