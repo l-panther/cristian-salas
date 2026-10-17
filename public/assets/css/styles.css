@@ -304,6 +304,39 @@ video {
   width: 100%;
 }
 
+.video-gallery ion-card-content {
+  --background: #191919;
+  background: #191919;
+  padding: 18px 20px 20px;
+  border-top: 1px solid rgba(180, 45, 45, 0.2);
+}
+
+.video-gallery ion-card-content::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #a52b2b;
+  margin-bottom: 12px;
+}
+
+.video-gallery ion-card-content h3 {
+  margin: 0 0 6px;
+  color: #c54a4a;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.video-gallery ion-card-content p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
 ion-card { 
   margin-top: 1rem; 
   background: var(--dark-grey); 
