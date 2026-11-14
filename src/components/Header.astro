@@ -28,3 +28,41 @@ const [firstname, lastname] = COMPANY_NAME.split(' ');
     </div>
   </ion-toolbar>
 </ion-header>
+
+
+<style>
+#navbar .brand-logo:hover,
+#navbar .sidenav-trigger:hover {
+  background: none;
+  color: var(--theme-red);
+}
+
+#navbar .sidenav-trigger:hover {
+  background: none;
+}
+
+#navbar .sidenav-trigger {
+  padding: 0;
+  margin: 0;
+}
+
+.brand-logo span {
+  color: var(--theme-light-red);
+}
+
+#navbar ion-menu-button {
+  font-size: 1.875rem;
+}
+
+ion-menu-button {
+  color: var(--theme-light-red);
+}
+
+#sidebar div {
+  padding-left: 0 !important;
+}
+
+ion-title {
+  padding: 0;
+}
+</style>
