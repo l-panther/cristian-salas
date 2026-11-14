@@ -23,3 +23,44 @@ const currentYear = new Date().getFullYear();
     </p>
   </div>
 </footer>
+
+
+<style>
+
+  /* FOOTER */
+footer {
+  background: none !important;
+  padding: 4rem 0 2rem;
+}
+
+footer ion-icon {
+  color: var(--theme-red) !important;
+  font-size: 1.875rem;
+}
+
+footer p {
+  color: var(--grey);
+  margin-top: 3rem;
+  font-size: 0.8rem;
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+@media screen and (max-width: 37.5rem) {
+  
+  /* Footer */
+  footer {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  footer ion-icon {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+  }
+}
+</style>
