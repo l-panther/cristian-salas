@@ -9,3 +9,45 @@ const [firstname, lastname] = COMPANY_NAME.split(' ');
     {firstname} <span>{lastname}</span>
   </p>
 </div>
+
+
+<style>
+.brand-logo {
+  color: var(--white) !important;
+  font-size: 1rem !important;
+  background: none;
+  margin: 0;
+  padding-left: 0.5rem !important;
+}
+
+/* LOGO */
+#taglet {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#taglet p {
+  color: var(--white) !important;
+  font-size: 1.2em !important;
+  background: none;
+  margin: 0;
+  padding-left: 0.5rem !important;
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+@media screen and (max-width: 37.5rem) {
+
+  /* Logo / tagline area */
+  #taglet {
+    padding-top: 1.25rem;
+    padding-bottom: 0.75rem;
+  }
+
+  #taglet p {
+    font-size: 1rem !important;
+  }
+}
+
+</style>
