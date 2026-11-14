@@ -42,3 +42,75 @@ import { COMPANY_NAME } from '../lib/config';
 
   </section> <!-- End About Me -->
 </Layout>
+
+
+<style>
+
+/* ABOUT */
+#about img {
+  width: 60%;
+  margin: 2rem 0 3rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 48.0625rem) {
+
+  /* ABOUT */
+  #about img {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+}
+
+  /* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+@media screen and (max-width: 37.5rem) {
+  
+  /* About profile image */
+  #about img {
+    width: 80%;
+    margin: 0.75rem auto 1.5rem;
+    display: block;
+  }
+
+  /* About text */
+  #about p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    letter-spacing: 0.09rem;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE TYPOGRAPHY
+--------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+
+  #about p {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    letter-spacing: 0.06rem !important;
+  }
+
+  /* Paragraph spacing */
+  #home p + p,
+  #about p + p {
+    margin-top: 1.25rem;
+  }
+}
+
+/* ---------------------------------------------------------
+   SMALL MOBILE DEVICES
+--------------------------------------------------------- */
+@media screen and (max-width: 375px) {
+
+  #about p {
+    font-size: 0.8125rem; /* 13px */
+    line-height: 1.6;
+    letter-spacing: 0.04rem !important;
+  }
+}
+
+</style>
