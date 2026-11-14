@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 import Taglet from '../components/Taglet.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -15,14 +16,13 @@ const base = import.meta.env.BASE_URL;
     <title>{COMPANY_NAME}</title>
     <meta name="description" content="Professional mobile car body repair services..." />
     <meta name="keywords" content="Mobile Car Repair, Car Body Repair..." />
-    <meta name="author" content="Leroy">
+    <meta name="author" content="Leroy Russell">
 
     <link rel="icon" type="image/png" sizes="32x32" href={`${base}assets/images/logo/logo.png`}>
     <link rel="apple-touch-icon" sizes="180x180" href={`${base}assets/images/logo/apple-touch-logo.png`}>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
     <link rel="stylesheet" href={`${base}assets/css/normalize.css`} />
-    <link rel="stylesheet" href={`${base}assets/css/styles.css`} />
   </head>
   <body>
     <!-- Sidebar (Menu) for mobile -->
