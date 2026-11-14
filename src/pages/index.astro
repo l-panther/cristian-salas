@@ -69,3 +69,142 @@ import Layout from '../layouts/Layout.astro';
   </section>
 </Layout>
 
+
+<style>
+/* Top row only */
+#home ion-grid > ion-row:first-child > ion-col:first-child {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+#home ion-grid > ion-row:first-child > ion-col:last-child {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+/* Third image spans the full width */
+#home ion-grid > ion-row:nth-child(2) > ion-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* HOME */
+#home img {
+  margin-top: 2rem;
+  border-radius: 1em;
+}
+
+#home img:last-of-type {
+  margin-top: 20px;
+}
+
+.gallery-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  column-gap: 24px;
+  row-gap: 20px;
+}
+
+.gallery-image .preview {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-label {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.label-line {
+  width: 35px;
+  height: 3px;
+  background: #ed1c24;
+  margin-bottom: 12px;
+}
+
+.label-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+}
+
+.label-subtitle {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.label-subtitle em {
+  color: #ed1c24;
+  font-style: normal;
+}
+
+/* Third image only */
+.large-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ---------------------------------------------------------
+   TABLET
+--------------------------------------------------------- */
+@media (max-width: 768px) {
+  .label-title {
+    font-size: 13px;
+  }
+
+  .label-subtitle {
+    font-size: 11px;
+  }
+
+  .label-line {
+    width: 25px;
+    height: 2px;
+    margin-bottom: 8px;
+  }
+}
+
+/* ---------------------------------------------------------
+   MOBILE TYPOGRAPHY
+--------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+
+  /* Paragraphs */
+  #home p {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    letter-spacing: 0.06rem !important;
+  }
+
+  /* Paragraph spacing */
+  #home p + p {
+    margin-top: 1.25rem;
+  }
+}
+
+/* ---------------------------------------------------------
+   SMALL MOBILE DEVICES
+--------------------------------------------------------- */
+@media screen and (max-width: 375px) {
+
+  #home p {
+    font-size: 0.8125rem; /* 13px */
+    line-height: 1.6;
+    letter-spacing: 0.04rem !important;
+  }
+}
+</style>
