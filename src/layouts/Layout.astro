@@ -1,11 +1,9 @@
 ---
+import { page, asset } from '../utils/paths';
 import '../styles/global.css';
 import Taglet from '../components/Taglet.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { COMPANY_NAME } from '../lib/config';
-
-const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -13,16 +11,15 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{COMPANY_NAME}</title>
-    <meta name="description" content="Professional mobile car body repair services..." />
-    <meta name="keywords" content="Mobile Car Repair, Car Body Repair..." />
+    <title>Cristian Salas | Digital Photography & Creative Portfolio</title>
+    <meta name="description" content="Explore the digital photography portfolio of Cristian Salas, featuring creative imagery, photographic projects and a collection of visual work."/>   <meta name="keywords" content="Mobile Car Repair, Car Body Repair..." />
     <meta name="author" content="Leroy Russell">
 
-    <link rel="icon" type="image/png" sizes="32x32" href={`${base}assets/images/logo/logo.png`}>
-    <link rel="apple-touch-icon" sizes="180x180" href={`${base}assets/images/logo/apple-touch-logo.png`}>
+    <link rel="icon" type="image/png" sizes="32x32" href={asset('assets/images/logo/logo.png')}>
+    <link rel="apple-touch-icon" sizes="180x180" href={asset('assets/images/logo/apple-touch-logo.png')}>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-    <link rel="stylesheet" href={`${base}assets/css/normalize.css`} />
+    <link rel="stylesheet" href={asset('assets/css/normalize.css')} />
   </head>
   <body>
     <!-- Sidebar (Menu) for mobile -->
@@ -30,16 +27,16 @@ const base = import.meta.env.BASE_URL;
       <ion-content>
         <ion-list lines="none">
           <ion-item class="home-btn">
-            <a href={base} class="nav-link">Home</a>
+            <a href={page} class="nav-link">Home</a>
           </ion-item>
           <ion-item class="archive-btn">
-            <a href={`${base}archive/`} class="nav-link">Archive</a>
+            <a href={page('archive/')} class="nav-link">Archive</a>
           </ion-item>
           <ion-item class="about-btn">
-            <a href={`${base}about/`} class="nav-link">About</a>
+            <a href={page('about/')} class="nav-link">About</a>
           </ion-item>
           <ion-item class="contact-btn">
-            <a href={`${base}contact/`} class="nav-link">Contact</a>
+            <a href={page('contact/')} class="nav-link">Contact</a>
           </ion-item>
         </ion-list>
       </ion-content>
@@ -60,8 +57,8 @@ const base = import.meta.env.BASE_URL;
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
-    <script type="module" src={`${base}assets/js/main.js`}></script>
-    <script type="module" src={`${base}assets/js/active.js`}></script>
+    <script type="module" src={page('assets/js/main.js')}></script>
+    <script type="module" src={page('assets/js/active.js')}></script>
 
   </body>
 </html>
